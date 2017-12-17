@@ -2,7 +2,13 @@
    @html.block("body", function(model) {
 
         <h1>@model.title</h1>
-        <p>This is from the server!</p>
 
+        @if (model.error) {
+            <p class="text-error">Error occurred: @model.error</p>
+        }
+
+        @model.items.forEach(function (item) {
+            <div><span>@item.item - </span><a href="#">@item.name</a></div>
+        })
    })
 })
