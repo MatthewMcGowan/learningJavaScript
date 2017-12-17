@@ -13,6 +13,8 @@ var app = express();
 // Setup Vash view engine
 app.set("view engine", "vash");
 
+app.use(express.static(__dirname + "/public"));
+
 var controllers = require("./controllers");
 controllers.init(app);
 
