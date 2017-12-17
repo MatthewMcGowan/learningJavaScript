@@ -14,3 +14,8 @@ console.log(funcs());
 var pseudoClass = require("./pseudoClass.js");
 var instance = new pseudoClass();
 console.log(instance.first);
+
+var logger = require("./logger");
+logger.log("this is from the logger");
+
+var underscore = require("undersore");
