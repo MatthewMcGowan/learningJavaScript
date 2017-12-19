@@ -1,4 +1,5 @@
 var http = require("http");
+
 var express = require("express");
 var app = express();
 
@@ -13,6 +14,7 @@ var app = express();
 // Setup Vash view engine
 app.set("view engine", "vash");
 
+// Allow contents of ./public to be accessible
 app.use(express.static(__dirname + "/public"));
 
 var controllers = require("./controllers");

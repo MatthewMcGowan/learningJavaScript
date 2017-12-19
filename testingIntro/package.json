@@ -1,0 +1,13 @@
+{
+  "name": "testingIntro",
+  "version": "0.0.0",
+  "description": "testingIntro",
+  "main": "app.js",
+  "author": {
+    "name": "Matt",
+    "email": ""
+  },
+  "dependencies": {
+    "nodeunit": "^0.11.2"
+  }
+}
